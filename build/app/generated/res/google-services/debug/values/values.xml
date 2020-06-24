@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">141780341491-lej8l9tjf315d5pd88ujtpks041e85sn.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://flutter-push-notificatio-a0a98.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">141780341491</string>
+    <string name="google_api_key" translatable="false">AIzaSyBjnL4xidvU0vHfzdn757oLBwFAtsWsBOo</string>
+    <string name="google_app_id" translatable="false">1:141780341491:android:306832c2a32d9707489d86</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBjnL4xidvU0vHfzdn757oLBwFAtsWsBOo</string>
+    <string name="google_storage_bucket" translatable="false">flutter-push-notificatio-a0a98.appspot.com</string>
+    <string name="project_id" translatable="false">flutter-push-notificatio-a0a98</string>
+</resources>
