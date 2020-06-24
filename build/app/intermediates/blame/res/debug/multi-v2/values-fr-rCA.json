@@ -4,7 +4,24 @@
             "outputFile": "/Users/luisfernandodimerdasilva/Desktop/flutter_push_notification/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml",
             "map": [
                 {
-                    "source": "/Users/luisfernandodimerdasilva/.gradle/caches/transforms-2/files-2.1/c1da7862c7abb8e426855a3f78caf221/core-1.0.0/res/values-fr-rCA/values-fr-rCA.xml",
+                    "source": "/Users/luisfernandodimerdasilva/.gradle/caches/transforms-2/files-2.1/83dc40238438e82cf9fe36a032b0cb8d/jetified-firebase-messaging-20.2.1/res/values-fr-rCA/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "211",
+                        "endColumns": "100",
+                        "endOffsets": "311"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "3006",
+                        "endColumns": "104",
+                        "endOffsets": "3106"
+                    }
+                },
+                {
+                    "source": "/Users/luisfernandodimerdasilva/.gradle/caches/transforms-2/files-2.1/df6cf23cc51da578d8b158de17d0c9cb/core-1.0.0/res/values-fr-rCA/values-fr-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/luisfernandodimerdasilva/.gradle/caches/transforms-2/files-2.1/ecc774be4a53956f05122e570538a899/jetified-play-services-basement-17.0.0/res/values-fr-rCA/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "251",
-                        "endColumns": "219",
-                        "endOffsets": "470"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1326",
-                        "endColumns": "219",
-                        "endOffsets": "1541"
-                    }
-                },
-                {
-                    "source": "/Users/luisfernandodimerdasilva/.gradle/caches/transforms-2/files-2.1/4c0b774c09d5393feb013f0dbe753af3/play-services-base-17.0.0/res/values-fr-rCA/values.xml",
+                    "source": "/Users/luisfernandodimerdasilva/.gradle/caches/transforms-2/files-2.1/9a6a440fae8500321f7e065f9575f81d/play-services-base-17.0.0/res/values-fr-rCA/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -55,20 +55,20 @@
                     }
                 },
                 {
-                    "source": "/Users/luisfernandodimerdasilva/.gradle/caches/transforms-2/files-2.1/611233e2e5321299df958e978dcdc609/jetified-firebase-messaging-20.2.1/res/values-fr-rCA/values.xml",
+                    "source": "/Users/luisfernandodimerdasilva/.gradle/caches/transforms-2/files-2.1/17f30b4e79c76fe0f4c9336f7aadcf0a/jetified-play-services-basement-17.0.0/res/values-fr-rCA/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
-                        "startOffsets": "211",
-                        "endColumns": "100",
-                        "endOffsets": "311"
+                        "startOffsets": "251",
+                        "endColumns": "219",
+                        "endOffsets": "470"
                     },
                     "to": {
-                        "startLines": "20",
+                        "startLines": "10",
                         "startColumns": "4",
-                        "startOffsets": "3006",
-                        "endColumns": "104",
-                        "endOffsets": "3106"
+                        "startOffsets": "1326",
+                        "endColumns": "219",
+                        "endOffsets": "1541"
                     }
                 }
             ]
