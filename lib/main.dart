@@ -1,5 +1,6 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterpushnotification/services/Launcher.service.dart';
 import 'modules/dialog-box/dialog-box.service.dart';
 
 void main() => runApp(MyApp());
@@ -45,27 +46,47 @@ class _MyHomePageState extends State<MyHomePage> {
     _notificationListener();
   }
 
+
   void _notificationListener() {
-    final _handler = (Map<String, dynamic> response) async => _notification(response);
+    
+    final _handler = (Map<String, dynamic> response) async {
+      final title = response['notification']['title'];
+      final link = response['data']['url'];
+
+      if (response['data']['url'] != null) {
+        LauncherService.launchWebView(context, title, link);
+      }
+    };
+
+    final _onMessageHandler = (Map<String, dynamic> response) async {
+      final title = response['notification']['title'];
+      final subtitle = response['notification']['body'];
+      final content = ListTile(
+        title: Text(title),
+        subtitle: Text(subtitle),
+      );
+
+      _dialogBoxService.openDialogBoxNotification(context, content, response);
+    };
+
+    //final _backgroundMessageHandler = (Map<String, dynamic> response) {
+    //  if (response.containsKey('data')) {
+    //    final dynamic data = response['data'];
+    //  }
+    //  if (response.containsKey('notification')) {
+    //    final dynamic notification = response['notification'];
+    // }
+    //};
+
 
     _fcm.configure(
-      onMessage: _handler,
-      onResume: _handler, //if
+      onMessage: _onMessageHandler,
+      //onBackgroundMessage: _backgroundMessageHandler,
       onLaunch: _handler,
+      onResume: _handler,
     );
   }
 
-  void _notification(Map<String, dynamic> response) {
-    final title = response['notification']['title'];
-    final subtitle = response['notification']['body'];
-
-    final content = ListTile(
-      title: Text(title),
-      subtitle: Text(subtitle),
-    );
-  
-    _dialogBoxService.openDialogBoxNotification(context, content, response);
-  }
 
   @override
   Widget build(BuildContext context) {
